@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="wovilon.pingpong1.MainActivity"
+    android:background="@drawable/menubackground"
+    tools:actionBarNavMode="@color/colorPrimaryDark">
+
+    <Button
+        android:text="@string/btNewGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBtNewGame"
+        android:textColor="@color/text_color"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textStyle="normal|bold" />
+
+    <Button
+        android:text="@string/How_to_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/button2"
+        android:textColor="@color/text_color"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentStart="true"
+        android:onClick="onHowClick" />
+
+    <Button
+        android:text="@string/Settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/button3"
+        android:textColor="@color/text_color"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:onClick="onSettingsClick" />
+
+    <Button
+        android:text="@string/Contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/button4"
+        android:textColor="@color/text_color"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:onClick="onContactsClick" />
+
+    <Button
+        android:text="@string/Exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/Button5"
+        android:textColor="@color/text_color"
+        android:textColorLink="@android:color/holo_blue_dark"
+        android:textSize="@dimen/activity_vertical_margin"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:onClick="onExitClick" />
+
+</RelativeLayout>

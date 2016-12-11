@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="wovilon.pingpong1.SettingsActivity"
+    android:background="@drawable/menubackground">
+
+    <SeekBar
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/generalSound"
+        android:layout_width="200dp"
+        android:fadeScrollbars="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/musicSound"
+        android:layout_below="@+id/generalSound"
+        android:layout_alignStart="@+id/generalSound" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/effectsSound"
+        android:layout_below="@+id/musicSound"
+        android:layout_alignStart="@+id/generalSound" />
+
+    <TextView
+        android:text="@string/SoundSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/generalSound"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:text="@string/EffectsSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignTop="@+id/effectsSound"
+        android:layout_alignStart="@+id/MusicSoundView" />
+
+    <TextView
+        android:text="@string/ControlsSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/effectsSound"
+        android:layout_alignStart="@+id/effectsSound" />
+
+    <TextView
+        android:text="@string/GeneralSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeneralSoundView"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginEnd="14dp"
+        android:layout_alignTop="@+id/generalSound"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/MusicSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MusicSoundView"
+        android:textColor="@android:color/darker_gray"
+        android:layout_alignTop="@+id/musicSound"
+        android:layout_alignStart="@+id/GeneralSoundView" />
+
+</RelativeLayout>
